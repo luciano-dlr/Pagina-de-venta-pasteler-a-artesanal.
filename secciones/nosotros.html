@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Shira Dulzuras</title>
 </head>
 <body>
@@ -23,7 +24,9 @@
                  <img src="../assets/Facebook logo.png" alt="facbook logo">
              </a>
         </div>
-        <nav class="header__nav">
+                                <!-- nav SIN boostrap-->
+        
+        <!--<nav class="header__nav">
             <ul class="header__list">
                 <li class="header__list-item">
                     <a href="../index.html">
@@ -51,62 +54,39 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav>-->
+        <nav class="navbar navbar-expand-rg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/secciones/presupuesta.tu.torta.html">Presupuesta Tu Torta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/secciones/nosotros.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/secciones/catalogo.html">Catalogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/secciones/PreguntasFrecuentes.html">Preguntas Frecuentes</a>
+                  </li>
+                </ul>
+    
+              </div>
+            </div>
+          </nav>
+    
 </header>
     <main>
-        <section class="section">
-            <p class="section__descripcion">
-                Somos un hermoso emprendimiento de postres artesanales elaborados con cariño y pasion, siempre utilizando la mejor materia prima, buscamos la mejor calidad y no el mejor precio somos sinceros. Gracias por leer 
-            </p>
-        </section>
-        <section class="section">
-            <ul class="section__contactolist">
-                <li class="section__contactolist-item">
-                    <a href="/Contacto/nosotros.html">
-                        <img src="../assets/Instagram logo.png" alt="instagram-logo">
-                    </a>
-                </li>
-                <li class="section__contactolist-item">
-                    <a href="/Contacto/nosotros.html">
-                        <img src="../assets/Youtube logo.png" alt="youtube-logo">
-                    </a>
-                </li>
-                <li class="section__contactolist-item">
-                    <a href="/Contacto/nosotros.html">
-                        <img src="../assets/Gamail logo.png" alt="gmail-logo">
-                    </a>
-                </li>
-            </ul>
-        </section>
-        <section class="section">
-            <form action="#" method="get">
-                <fieldset class="section__cuestionario">
-                    <legend class="legend__cuestionario">Contactanos</legend>
-                    <div>
-                        <label for="nombre" class="section__cuestionario-titulo-nombre">Nombre</label>
-                        <input type="text" name="nombre" class="section__cuestionario-nombre" placeholder="Ingresar nombre">
-                    </div>
-                    <div>
-                        <label for="apellido" class="section__cuestionario-titulo-apellido">Apellido</label>
-                        <input type="text" name="apellido" class="section__cuestionario-apellido" placeholder="Ingresar apellido">
-                    </div>
-                    <div>
-                        <label for="email" class="section__cuestionario-titulo-email">Email para Contacto</label>
-                        <input type="email" name="email" id="email" class="section__cuestionario-email">
-                    </div>
-                    <div>
-                        <label for="opinion" name="opinion" class="section__cuestionario-titulo-opinion">Cuentanos tu Opinion</label>
-                        <div class="section__cuestionario-opinion-box">
-                            <textarea name="opinion" id="opinion" cols="30" rows="10" placeholder="Cuenta tu opinion sobre nosotros, nos ayudas a crecer!"></textarea>
-                            </textarea>
-                        </div>
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-                </fieldset>
-            </form>
-        </section>
+
     </main>
     <footer class="footer">
         <ul class="footer__pagoslist">
@@ -144,5 +124,6 @@
             </li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

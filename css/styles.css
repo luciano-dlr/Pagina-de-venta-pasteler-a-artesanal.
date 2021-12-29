@@ -135,6 +135,11 @@ html{
 .main__section-ofertas-item3{
     grid-area: c;
 }
+.mian__imagenes {
+    width: 5%;
+    padding-right: 30%;
+    padding-left: 30%;
+}
 .footer{
     
     background-color: #ffb6af;
