@@ -121,4 +121,8 @@ main{
     margin-top: 0.25em;
 }
 
-
+@media (max-width: 1280px){
+    .imgae__overlay{
+        opacity: 1;
+    }
+}
