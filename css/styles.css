@@ -120,15 +120,24 @@ main{
     font-size: 1.25em;
     margin-top: 0.25em;
 }
-.footer__derechos{
-      display: flex;
-      margin-top: 13rem;
-      justify-content: center;
-      
+
+.col{
+    display: flex;
 }
+.footer{
+    background-color: #ffb6af;
+}
+.footer__test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
 
 @media (max-width: 1280px){
     .imgae__overlay{
         opacity: 1;
     }
 }
+
