@@ -12,7 +12,7 @@
     justify-content: center;
     opacity: 0;
     transition: opacity 0.25s;
-    font-family: 'Oooh Baby', cursive;
+    font-family: $letraparrafo;
     &:hover {
         opacity: 1;
     }

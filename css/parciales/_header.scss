@@ -1,5 +1,6 @@
+@import"./variables";
 .header{
-    background-color: #ffb6af;
+    background-color:$shiracolor;
     padding: 4px;
     &__nav--position{
         display: flex;
@@ -13,13 +14,13 @@
         justify-content: flex-end;
         padding-right: 2%;
         align-items: center;
-        background-color: #ffb6af;
+        background-color:$shiracolor;
         .header__frase--nombre{
-            font-family: 'Oooh Baby', cursive;
+            font-family:$letraparrafo;
             font-size: large;
         }
         .header__frase{
-            font-family: 'Pacifico', cursive;
+            font-family:$letratitulo;
             font-size: large;
         }
     }
@@ -30,7 +31,7 @@
         width: 20vh;
     }
     .nav__paddin{
-        font-family: 'Pacifico', cursive;
+        font-family:$letratitulo;
         margin-top: 2vh;
     }
 }

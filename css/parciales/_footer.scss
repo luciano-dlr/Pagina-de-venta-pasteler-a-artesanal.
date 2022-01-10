@@ -1,10 +1,11 @@
+
 .footer{
-    background-color: #ffb6af;
+    background-color: $shiracolor;
     .footer__test{
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 5vh;
-        font-family: 'Pacifico', cursive;
+        font-family: $letratitulo;
     }
 }
