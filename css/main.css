@@ -272,4 +272,10 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 1024px) {
+  .imgae__overlay {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=main.css.map */
