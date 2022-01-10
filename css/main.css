@@ -1,15 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-}
-
-* .header {
+.header {
   background-color: #ffb6af;
   padding: 4px;
 }
 
-* .header .header__nav--position {
+.header__nav--position {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,7 +17,7 @@
   padding: 1px;
 }
 
-* .header .header__text {
+.header__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,45 +35,48 @@
   background-color: #ffb6af;
 }
 
-* .header .header__frase {
-  font-family: 'Pacifico', cursive;
-  font-size: large;
-}
-
-* .header .header__frase--nombre {
+.header__text .header__frase--nombre {
   font-family: 'Oooh Baby', cursive;
   font-size: large;
 }
 
-* .header .header__logo {
+.header__text .header__frase {
+  font-family: 'Pacifico', cursive;
+  font-size: large;
+}
+
+.header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-* .header .background_color {
-  background-color: #ffb6af;
-}
-
-* .header .header__catalogo {
+.header__catalogo {
   width: 20vh;
 }
 
-* .header .nav__paddin {
+.header .nav__paddin {
   font-family: 'Pacifico', cursive;
   margin-top: 2vh;
 }
 
-* .main {
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
   background-color: #ffb6af;
 }
 
-* .main__animation {
+.main__animation {
   display: block;
   width: 100%;
 }
 
-* .main .main__catalogo {
+.main .main__catalogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,27 +89,27 @@
   background: rgba(255, 182, 175, 0);
 }
 
-* .main__img {
+.main__img {
   font-family: 'Oooh Baby', cursive;
   font-size: xx-large;
   width: 350px;
   padding: 3rem;
 }
 
-* .main__img .slide img {
+.main__img .slide img {
   width: 100%;
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-* .main__card {
+.main__card {
   width: 350px;
   padding: 3rem;
   background-color: #ffb6af;
 }
 
-* .main__card img {
+.main__card img {
   width: 100%;
   height: 400px;
   -o-object-fit: cover;
@@ -119,14 +117,14 @@
   background-color: #ffb6af;
 }
 
-* .main__card--item {
+.main__card--item {
   padding: 1vh;
   margin: 2%;
   position: relative;
   width: 100%;
 }
 
-* .imgae__overlay {
+.imgae__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -153,11 +151,11 @@
   font-family: 'Oooh Baby', cursive;
 }
 
-* .imgae__overlay:hover {
+.imgae__overlay:hover {
   opacity: 1;
 }
 
-* .imgae__overlay > * {
+.imgae__overlay > * {
   -webkit-transform: translatey(20px);
           transform: translatey(20px);
   -webkit-transition: -webkit-transform 0.25s;
@@ -166,32 +164,32 @@
   transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
-* .imgae__overlay:hover > * {
+.imgae__overlay:hover > * {
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
 
-* .imgae__overlay .image__title {
+.imgae__overlay .image__title {
   font-size: 2rem;
   font-weight: bold;
 }
 
-* .imgae__overlay .image__description {
+.imgae__overlay .image__description {
   font-size: 1.25em;
   margin-top: 0.25em;
 }
 
-* .col {
+.col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-* .footer {
+.footer {
   background-color: #ffb6af;
 }
 
-* .footer .footer__test {
+.footer .footer__test {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +203,7 @@
   font-family: 'Pacifico', cursive;
 }
 
-* .fade-in {
+.fade-in {
   -webkit-animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
@@ -228,7 +226,7 @@
   }
 }
 
-* .slide-in-blurred-right {
+.slide-in-blurred-right {
   -webkit-animation: slide-in-blurred-right 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: slide-in-blurred-right 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
@@ -271,12 +269,6 @@
     transform-origin: 50% 50%;
     -webkit-filter: blur(0);
     filter: blur(0);
-    opacity: 1;
-  }
-}
-
-@media (max-width: 1024px) {
-  * .imgae__overlay {
     opacity: 1;
   }
 }

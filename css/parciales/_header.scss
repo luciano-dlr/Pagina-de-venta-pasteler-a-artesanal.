@@ -1,0 +1,36 @@
+.header{
+    background-color: #ffb6af;
+    padding: 4px;
+    &__nav--position{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1px;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-right: 2%;
+        align-items: center;
+        background-color: #ffb6af;
+        .header__frase--nombre{
+            font-family: 'Oooh Baby', cursive;
+            font-size: large;
+        }
+        .header__frase{
+            font-family: 'Pacifico', cursive;
+            font-size: large;
+        }
+    }
+    &__logo{
+        display: flex;
+    }
+    &__catalogo{
+        width: 20vh;
+    }
+    .nav__paddin{
+        font-family: 'Pacifico', cursive;
+        margin-top: 2vh;
+    }
+}
