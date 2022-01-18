@@ -1,10 +1,8 @@
-
+@import"./mixins";
 .footer{
     background-color: $shiracolor;
     .footer__test{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include centerpage;
         padding: 5vh;
         font-family: $letratitulo;
     }

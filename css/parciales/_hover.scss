@@ -1,3 +1,4 @@
+@import"./mixins";
 .imgae__overlay{
     position: absolute;
     top: 0;
@@ -26,9 +27,17 @@
     .image__title{
         font-size: 2rem;
         font-weight: bold;
+        @include mini-pantallas {
+            font-size: 20px;
+            
+        }
     }
     .image__description{
         font-size: 1.25em;
         margin-top: 0.25em;
+        @include mini-pantallas {
+            font-size: 10px;
+            
+        }
     }
 }
