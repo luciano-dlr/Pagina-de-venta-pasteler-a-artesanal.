@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
+.header__text .header__frase--nombre, .header__text .header__frase {
+  font-size: large;
+}
+
 .header {
   background-color: #ffb6af;
   padding: 4px;
@@ -39,12 +43,10 @@
 
 .header__text .header__frase--nombre {
   font-family: "Oooh Baby", cursive;
-  font-size: large;
 }
 
 .header__text .header__frase {
   font-family: "Pacifico", cursive;
-  font-size: large;
 }
 
 .header__logo {
@@ -291,5 +293,9 @@
   .imgae__overlay {
     opacity: 1;
   }
+}
+
+.header__text .header__frase--nombre, .header__text .header__frase {
+  font-size: large;
 }
 /*# sourceMappingURL=main.css.map */

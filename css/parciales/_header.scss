@@ -1,4 +1,5 @@
 @import"./variables";
+@import"./extends";
 .header{
     background-color:$shiracolor;
     padding: 4px;
@@ -17,11 +18,11 @@
         background-color:$shiracolor;
         .header__frase--nombre{
             font-family:$letraparrafo;
-            font-size: large;
+            @extend %font.size.l;
         }
         .header__frase{
             font-family:$letratitulo;
-            font-size: large;
+            @extend %font.size.l;
         }
     }
     &__logo{
