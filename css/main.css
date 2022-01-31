@@ -128,6 +128,12 @@
   width: 100%;
 }
 
+.main__catalogo--title {
+  background: rgba(255, 182, 175, 0.8);
+  font-size: 135%;
+  font-family: cursive;
+}
+
 .imgae__overlay {
   position: absolute;
   top: 0;
@@ -289,9 +295,15 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .imgae__overlay {
     opacity: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    display: none;
   }
 }
 

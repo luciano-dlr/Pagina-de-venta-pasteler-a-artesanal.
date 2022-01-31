@@ -1,6 +1,11 @@
-@media (max-width: 1024px){
+@media (max-width: 1080px){
     .imgae__overlay{
         opacity: 1;
+    }
+}
+@media (max-width: 991px){
+    .navbar-brand{
+        display: none;
     }
 }
 
