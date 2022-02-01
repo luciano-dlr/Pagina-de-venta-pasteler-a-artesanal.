@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 .header__text .header__frase--nombre, .header__text .header__frase {
   font-size: large;
 }
@@ -131,7 +133,42 @@
 .main__catalogo--title {
   background: rgba(255, 182, 175, 0.8);
   font-size: 135%;
-  font-family: cursive;
+  font-family: "Courgette", cursive;
+}
+
+.main__preguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffb6af;
+}
+
+.main__preguntas--box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Courgette", cursive;
+  font-size: 110%;
+}
+
+.main__preguntas--box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  margin: 2rem;
+  margin-bottom: 3rem;
+  background-color: #ffb6af;
 }
 
 .imgae__overlay {
