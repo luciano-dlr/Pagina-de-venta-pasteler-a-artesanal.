@@ -114,6 +114,11 @@
      object-fit: cover;
 }
 
+.main__pedidos {
+  font-family: "Courgette", cursive;
+  font-size: 1em;
+}
+
 .main__card {
   width: 350px;
   padding: 3rem;

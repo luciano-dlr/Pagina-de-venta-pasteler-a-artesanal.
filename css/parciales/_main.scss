@@ -26,6 +26,11 @@
             object-fit: cover;
         }
     }
+    &__pedidos{
+        font-family: $letrapreguntas;
+        font-size: 1em;
+
+    }
 }
 .main__card{
     width: 350px;
