@@ -59,54 +59,74 @@
             </figure>
         </div>
     </header>
-                                                                            <!--FIN-HEADER-->
-                                                                                <!--MAIN-->                                                                           
-    <main class="main container-fluid">
-        <div class="row g-2">
-            <div class="col-md">
-              <div class="form-floating">
-                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
-                <label for="floatingInputGrid">Nombre</label>
-              </div>
-            </div>
-            <div class="col-md">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
-                  <label for="floatingInputGrid">Apellido</label>
+    <!--FIN-HEADER-->
+    <!--MAIN-->                                                                           
+    <main class="main">
+        <section class="container-fluid shadow-lg">
+           <form>
+           <div class="row g-2 p-3">
+               <div class="col-md p-4">
+                 <div class="form-floating">
+                   <input type="text" class="form-control bg-transparent border-1 border-dark shadow-lg" id="floatingInputGrid" placeholder="Nombre">
+                   <label for="floatingInputGrid">Nombre</label>
+                 </div>
+               </div>
+               <div class="col-md p-4">
+                   <div class="form-floating">
+                     <input type="text" class="form-control bg-transparent border-1 border-dark shadow-lg" id="floatingInputGrid" placeholder="Apellido">
+                     <label for="floatingInputGrid">Apellido</label>
+                   </div>
+                 </div>
+             </div>
+             <div class="row g-2 p-3">
+               <div class="col-md p-4">
+                 <div class="form-floating ">
+                   <input type="number" class="form-control bg-transparent border-1 border-dark shadow-lg" id="floatingInputGrid" >
+                   <label for="floatingInputGrid">Celular</label>
+                 </div>
+               </div>
+               <div class="col-md p-4">
+                 <div class="form-floating">
+                   <select class="form-select bg-transparent border-1 border-dark shadow-lg" id="floatingSelectGrid" aria-label="Floating label select example">
+                     <option selected>Categoria Postres</option>
+                     <option value="1">Alfajores Mixtos</option>
+                     <option value="2">Tarta Oreo</option>
+                     <option value="3">Letras</option>
+                     <option value="4">Postres Individuales</option>
+                     <option value="5">Macarons</option>
+                     <option value="6">chocotorta</option>
+                     <option value="7">Salado</option>
+                     <option value="8">Pascuas</option>
+                     <option value="9">Varios</option>
+                   </select>
+                   <label for="floatingSelectGrid">Pedido</label>
+                 </div>
+               </div>
+             </div>
+             <div class="row g-2 p-3">
+                <div class="col-md p-4">
+                  <div class="form-floating">
+                    <input type="email" class="form-control bg-transparent border-1 border-dark shadow-lg" id="floatingInputGrid">
+                    <label for="floatingInputGrid">Email Para Contacto</label>
+                  </div>
                 </div>
+                <div class="col-md p-4">
+                    <div class="form-floating">
+                      <input type="date" class="form-control bg-transparent border-1 border-dark shadow-lg" id="floatingInputGrid" placeholder="Apellido">
+                      <label for="floatingInputGrid">Fecha De Entrega</label>
+                    </div>
+                  </div>
               </div>
-          </div>
-          <div class="row g-2">
-            <div class="col-md">
-              <div class="form-floating">
-                <input type="number" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
-                <label for="floatingInputGrid">Celular</label>
-              </div>
-            </div>
-            <div class="col-md">
-              <div class="form-floating">
-                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                  <option selected>Categoria Postres</option>
-                  <option value="1">Alfajores Mixtos</option>
-                  <option value="2">Tarta Oreo</option>
-                  <option value="3">Letras</option>
-                  <option value="4">Postres Individuales</option>
-                  <option value="5">Macarons</option>
-                  <option value="6">chocotorta</option>
-                  <option value="7">Salado</option>
-                  <option value="8">Pascuas</option>
-                  <option value="9">Varios</option>
-                </select>
-                <label for="floatingSelectGrid">Pedido</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Detalles del pedido</label>
-          </div>
-          
-        
+             <div class="form-floating p-4">
+               <textarea class="form-control bg-transparent border-1 border-dark shadow-lg" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+               <label for="floatingTextarea2" class="m-4">Detalles del pedido</label>
+             </div>
+                 <div class="d-flex justify-content-center p-4">
+                    <button class="btn btn-outline-dark bg-transparent border-1 border-dark shadow-lg" type="link">Enviar Pedido   
+                    </button>
+                 </div>
+             </form>  
+       </section>
     </main>
                                                                         <!--Fin-MAIN-->  
     <footer class="footer shadow-lg">   <!--Footer-->
