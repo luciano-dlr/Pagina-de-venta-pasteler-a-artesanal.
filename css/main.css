@@ -147,6 +147,8 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: #ffb6af;
+  padding: 4vh;
+  font-size: 2vh;
 }
 
 .main__preguntas--box1 {
@@ -168,11 +170,13 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding: 5rem;
+  font-size: 2vh;
   background-color: #ffb6af;
 }
 
 .main__preguntas--box2--itmes {
   font-family: "Courgette", cursive;
+  margin-bottom: 1vh;
 }
 
 .imgae__overlay {
@@ -264,6 +268,11 @@
           justify-content: center;
   padding: 5vh;
   font-family: "Pacifico", cursive;
+}
+
+.footer__preguntas {
+  padding-top: 4vh;
+  padding-bottom: 6vh;
 }
 
 .fade-in {

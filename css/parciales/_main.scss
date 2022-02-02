@@ -51,6 +51,9 @@
     justify-content: center;
     align-items: center;
     background-color: $shiracolor;
+    padding: 4vh;
+    font-size: 2vh;
+    
     &--box1 {
         display: flex;
         justify-content: center;
@@ -64,10 +67,11 @@
         display: flex;
         justify-content: center;
         padding: 5rem;
-        
+        font-size: 2vh;        
         background-color: $shiracolor;
         &--itmes{
             font-family: $letrapreguntas;
+            margin-bottom: 1vh;
 
         }
         
