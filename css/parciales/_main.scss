@@ -16,6 +16,10 @@
         font-size: xx-large;
         width: 350px;
         padding: 3rem;
+        &--carousel{
+            font-family: $letrapreguntas;
+            font-size: 4vh;
+        }
         .slide img {
             width: 100%;
             height: 450px;
