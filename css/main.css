@@ -165,10 +165,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem;
-  margin: 2rem;
-  margin-bottom: 3rem;
+  padding: 5rem;
   background-color: #ffb6af;
+}
+
+.main__preguntas--box2--itmes {
+  font-family: "Courgette", cursive;
 }
 
 .imgae__overlay {
