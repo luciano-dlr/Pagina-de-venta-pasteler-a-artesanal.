@@ -43,19 +43,19 @@
 }
 .main__catalogo--title{
     background: rgba(255, 182, 175, 0.8);
-    font-size: 135%;
+    font-size: 2vh;
     font-family: $letrapreguntas;
 }
 .main__preguntas{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: $shiracolor;
     &--box1 {
         display: flex;
-        padding: 5rem;
         justify-content: center;
         font-family: $letrapreguntas;
-        font-size: 110%;
+        font-size: 1em;
 
    
     }
