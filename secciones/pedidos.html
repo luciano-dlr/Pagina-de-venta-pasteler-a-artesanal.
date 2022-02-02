@@ -31,14 +31,14 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav align-items-center">
                             <li class="nav-item">
-                                <a class="nav-link btn-outline-light" href="#">Catalogo</a>
+                                <a class="nav-link btn-outline-light" href="./catalogo.html">Catalogo</a>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link btn-outline-light" href="#">Pedido</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn-outline-light text-center" href="#">Preguntas</a>
+                                <a class="nav-link btn-outline-light text-center" href="./preguntas.html">Preguntas</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link btn-outline-light text-center" href="#">Nosotros</a>
@@ -61,8 +61,52 @@
     </header>
                                                                             <!--FIN-HEADER-->
                                                                                 <!--MAIN-->                                                                           
-    <main class="main">
-
+    <main class="main container-fluid">
+        <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+                <label for="floatingInputGrid">Nombre</label>
+              </div>
+            </div>
+            <div class="col-md">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+                  <label for="floatingInputGrid">Apellido</label>
+                </div>
+              </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="number" class="form-control" id="floatingInputGrid" placeholder="name@example.com">
+                <label for="floatingInputGrid">Celular</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                  <option selected>Categoria Postres</option>
+                  <option value="1">Alfajores Mixtos</option>
+                  <option value="2">Tarta Oreo</option>
+                  <option value="3">Letras</option>
+                  <option value="4">Postres Individuales</option>
+                  <option value="5">Macarons</option>
+                  <option value="6">chocotorta</option>
+                  <option value="7">Salado</option>
+                  <option value="8">Pascuas</option>
+                  <option value="9">Varios</option>
+                </select>
+                <label for="floatingSelectGrid">Pedido</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Detalles del pedido</label>
+          </div>
+          
+        
     </main>
                                                                         <!--Fin-MAIN-->  
     <footer class="footer shadow-lg">   <!--Footer-->
