@@ -1,43 +1,41 @@
-@import"./mixins";
-.imgae__overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 182, 175, 0.6);
-    color: whitesmoke;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-    font-family: $letraparrafo;
-    &:hover {
-        opacity: 1;
+@import "./mixins";
+.imgae__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 182, 175, 0.6);
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  font-family: $letraparrafo;
+  &:hover {
+    opacity: 1;
+  }
+  & > * {
+    transform: translatey(20px);
+    transition: transform 0.25s;
+  }
+  &:hover > * {
+    transform: translateY(0px);
+  }
+  .image__title {
+    font-size: 2rem;
+    font-weight: bold;
+    @include mini-pantallas {
+      font-size: 20px;
     }
-    & > * {
-        transform: translatey(20px);
-        transition: transform 0.25s;
+  }
+  .image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    @include mini-pantallas {
+      font-size: 10px;
     }
-    &:hover > * {
-        transform: translateY(0px);
-    }
-    .image__title{
-        font-size: 2rem;
-        font-weight: bold;
-        @include mini-pantallas {
-            font-size: 20px;
-            
-        }
-    }
-    .image__description{
-        font-size: 1.25em;
-        margin-top: 0.25em;
-        @include mini-pantallas {
-            font-size: 10px;
-            
-        }
-    }
+  }
 }

@@ -1,13 +1,5 @@
 @mixin centerpage {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-@mixin mini-pantallas {
-    @media screen and (max-width:280px) {
-        @content
-    }
-
-}
- 
