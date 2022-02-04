@@ -1,4 +1,5 @@
 @import"./variables";
+@import"./extends";
 .header{
     background-color:$shiracolor;
     padding: 4px;
@@ -8,6 +9,7 @@
         justify-content: space-between;
         padding: 1px;
     }
+    
     &__text{
         display: flex;
         flex-direction: column;
@@ -17,11 +19,11 @@
         background-color:$shiracolor;
         .header__frase--nombre{
             font-family:$letraparrafo;
-            font-size: large;
+            @extend %font.size.l;
         }
         .header__frase{
             font-family:$letratitulo;
-            font-size: large;
+            @extend %font.size.l;
         }
     }
     &__logo{
@@ -30,8 +32,17 @@
     &__catalogo{
         width: 20vh;
     }
+    &__nosotros{
+        width: 100%;
+        height: 100%;
+        
+    }
     .nav__paddin{
         font-family:$letratitulo;
         margin-top: 2vh;
     }
+    .header__logo--nosotros{
+        width: 40%;
+    }
 }
+

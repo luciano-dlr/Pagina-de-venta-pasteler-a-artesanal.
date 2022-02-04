@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+.header__text .header__frase--nombre, .header__text .header__frase {
+  font-size: large;
+}
+
 .header {
   background-color: #ffb6af;
   padding: 4px;
@@ -39,12 +45,10 @@
 
 .header__text .header__frase--nombre {
   font-family: "Oooh Baby", cursive;
-  font-size: large;
 }
 
 .header__text .header__frase {
   font-family: "Pacifico", cursive;
-  font-size: large;
 }
 
 .header__logo {
@@ -57,9 +61,18 @@
   width: 20vh;
 }
 
+.header__nosotros {
+  width: 100%;
+  height: 100%;
+}
+
 .header .nav__paddin {
   font-family: "Pacifico", cursive;
   margin-top: 2vh;
+}
+
+.header .header__logo--nosotros {
+  width: 40%;
 }
 
 * {
@@ -85,8 +98,18 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: 4%;
+  top: 10%;
   background: rgba(255, 182, 175, 0);
+}
+
+.main .main__video {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 50em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 20%;
 }
 
 .main__img {
@@ -96,11 +119,58 @@
   padding: 3rem;
 }
 
+.main__img--carousel {
+  font-family: "Courgette", cursive;
+  font-size: 4vh;
+}
+
 .main__img .slide img {
   width: 100%;
   height: 450px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.main__pedidos {
+  font-family: "Courgette", cursive;
+  font-size: 1em;
+}
+
+.main__text--nosotros {
+  padding: 1rem;
+  position: absolute;
+  top: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__text--nosotros--titulo {
+  padding: 1rem;
+  font-family: "Oooh Baby", cursive;
+  font-size: 2.5vh;
+  font-weight: bolder;
+}
+
+.main__text--nosotros--parrafo {
+  font-family: "Courgette", cursive;
+  font-size: 2vh;
+}
+
+.main__text--nosotros--firma {
+  padding: 6rem;
+  font-family: "Oooh Baby", cursive;
+  font-size: 4vh;
 }
 
 .main__card {
@@ -122,6 +192,55 @@
   margin: 2%;
   position: relative;
   width: 100%;
+}
+
+.main__catalogo--title {
+  background: rgba(255, 182, 175, 0.8);
+  font-size: 2vh;
+  font-family: "Courgette", cursive;
+}
+
+.main__preguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffb6af;
+  padding: 4vh;
+  font-size: 2vh;
+}
+
+.main__preguntas--box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Courgette", cursive;
+  font-size: 1em;
+}
+
+.main__preguntas--box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem;
+  font-size: 2vh;
+  background-color: #ffb6af;
+}
+
+.main__preguntas--box2--itmes {
+  font-family: "Courgette", cursive;
+  margin-bottom: 1vh;
 }
 
 .imgae__overlay {
@@ -174,9 +293,21 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 280px) {
+  .imgae__overlay .image__title {
+    font-size: 20px;
+  }
+}
+
 .imgae__overlay .image__description {
   font-size: 1.25em;
   margin-top: 0.25em;
+}
+
+@media screen and (max-width: 280px) {
+  .imgae__overlay .image__description {
+    font-size: 10px;
+  }
 }
 
 .col {
@@ -201,6 +332,11 @@
           justify-content: center;
   padding: 5vh;
   font-family: "Pacifico", cursive;
+}
+
+.footer__preguntas {
+  padding-top: 4vh;
+  padding-bottom: 6vh;
 }
 
 .fade-in {
@@ -273,9 +409,26 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .imgae__overlay {
     opacity: 1;
   }
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .main__preguntas {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.header__text .header__frase--nombre, .header__text .header__frase {
+  font-size: large;
 }
 /*# sourceMappingURL=main.css.map */

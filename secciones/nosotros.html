@@ -1,129 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Shira Dulzuras</title>
 </head>
-<body>
-    <header class="header">
-        <div class="header__div">
-            <a href="../index.html">
-                <img src="../assets/Shira.logo..png" alt="Shira Dulzuras Logo" class="header__div-logo-item">
-            </a>
-            <a href="#wpp" class="header__div-contacto-item1">
-                <img src="../assets/Wpp logo.png" alt="logo wpp" class="header__div-contacto-item-wpp">
-            </a>
-            <a href="#insta" class="header__div-contacto-item2">
-                <img src="../assets/Instagram logo.png" alt="instagram logo" class="header__div-contacto-item-insta">
-             </a>
-             <a href="#facebook" class="header__div-contacto-item3">
-                 <img src="../assets/Facebook logo.png" alt="facbook logo">
-             </a>
-        </div>
-                                <!-- nav SIN boostrap-->
-        
-        <!--<nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__list-item">
-                    <a href="../index.html">
-                        Inicio
-                    </a>
-                </li>
-                <li class="header__list-item">
-                    <a href="./presupuesta.tu.torta.html">
-                        Presupuesta Tu Torta
-                    </a>
-                </li>
-                <li class="header__list-item">
-                    <a href="./nosotros.html">
-                        Quienes Somos
-                    </a>
-                </li>
-                <li class="header__list-item">
-                    <a href="./catalogo.html">
-                         Catalogo
-                    </a>
-                </li>
-                <li class="header__list-item">
-                    <a href="./PreguntasFrecuentes.html">
-                        Preguntas Frecuentes
-                    </a>
-                </li>
-            </ul>
-        </nav>-->
-        <nav class="navbar navbar-expand-rg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html">Inicio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/secciones/presupuesta.tu.torta.html">Presupuesta Tu Torta</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/secciones/nosotros.html">Quienes Somos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/secciones/catalogo.html">Catalogo</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/secciones/PreguntasFrecuentes.html">Preguntas Frecuentes</a>
-                  </li>
-                </ul>
-    
-              </div>
-            </div>
-          </nav>
-    
-</header>
-    <main>
 
+<body>
+    <!--HEADER-->
+    <header class="header header__nosotros header__nosotros">
+        <div class="container-fluid header__nav--position">
+            <div class="container header__logo">
+                <a href="../index.html">
+                    <img src="../assets/Shira.logo..png" class="img-fluid header__catalogo header__logo--nosotros"
+                        alt="Logo">
+                    <!--Logo-header-->
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light nav__paddin nav__paddin--nosotros">
+                <!--Nav-bar-->
+                <div class="nav__paddin container-fluid justify-content-center">
+                    <a class="navbar-brand">Shira</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light" href="./catalogo.html">Catalogo</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light" href="./pedidos.html">Pedido</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-center" href="./preguntas.html">Preguntas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-center" href="#">Nosotros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Fin-Nav-bar-->
+        </div>
+    </header>
+    <!--FIN-HEADER-->
+    <!--MAIN-->
+    <main class="main">
+        <video muted autoplay loop class="main__video">
+            <source src="../assets/VID_20210929_125318_2_Trim.mp4" type="video/mp4">
+        </video>
+        <div class="main__text--nosotros container-fluid">
+            <h6 class="main__text--nosotros--titulo text-center">Todo casero, dulce con amor y dedicación</h6>
+            <p class="main__text--nosotros--parrafo text-center">
+                Queremos Darles las Gracias por ver Nuestros Productos. Somos Un Emprendimiento con Pasión, hace solo un
+                Año Comenzamos con este Sueño y Pretendemos Seguir Creciendo
+            </p>
+            <h2 class="main__text--nosotros--firma text-center">Shira</h2>
+        </div>
     </main>
-    <footer class="footer">
-        <ul class="footer__pagoslist">
-            <li class="footer__pagoslist-item">
-                <a href="../Pedidos/pedidos.html">
-                    <img src="../assets/Paypal.logo.png" alt="paypal-logo">
-                </a>                                
-            </li>
-            <li class="footer__pagoslist-item">
-                <a href="../Pedidos/pedidos.html">
-                    <img src="../assets/Mercadopago logo.png" alt="mercadopago-logo">
-                </a>
-            </li>
-            <li class="footer__pagoslist-item">
-                <a href="../Pedidos/pedidos.html">
-                    <img src="../assets/Binance logo.png" alt="bitcoin-logo">
-                </a>
-            </li>
-        </ul>
-        <ul class="footer__contactolist">
-            <li class="footer__contactolist-item">
-                <a href="/secciones/nosotros.html">
-                    <img src="../assets/Instagram logo.png" alt="instagram-logo">
-                </a>
-            </li>
-            <li class="footer__contactolist-item">
-                <a href="/secciones/nosotros.html">
-                    <img src="../assets/Youtube logo.png" alt="youtube-logo">
-                </a>
-            </li>
-            <li class="footer__contactolist-item">
-                <a href="/secciones/nosotros.html">
-                    <img src="../assets/Gamail logo.png" alt="gmail-logo">
-                </a>
-            </li>
-        </ul>
+    <!--Fin-MAIN-->
+    <footer class="footer shadow-lg">
+        <!--Footer-->
+        <div class="conteiner-fluid footer__test text-center">
+            Todos los Derechos Reservados Shira ©
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

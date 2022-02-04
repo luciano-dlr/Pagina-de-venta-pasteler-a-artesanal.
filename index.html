@@ -5,22 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyboards"
+        content="shira, shira dulzuras, postres, tortas, chocotorta, pascuas, regalos, alfajores, chocolate, dulce de leche">
+    <meta name="description" content="Pasteleria Artesanal Shira Dulzuras">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Shira Dulzuras</title>
 </head>
-<body">
+
+<body>
+    <!--HEADER-->
     <header class="header">
         <div class="container-fluid header__nav--position">
             <div class="container header__logo">
                 <a href="/index.html">
                     <img src="./assets/Shira.logo..png" class="img-fluid" alt="shira logo">
+                    <!--Logo-header-->
                 </a>
             </div>
             <nav class="navbar navbar-expand-lg navbar-light nav__paddin slide-in-blurred-right">
-                <div class="nav__paddin container-fluid">
-                    <a class="navbar-brand btn-outline-light text-center" href="/index.html">Shira</a>
+                <!--Nav-bar-->
+                <div class="nav__paddin container-fluid justify-content-center">
+                    <a class="navbar-brand text-center">Shira</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -28,23 +35,26 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav align-items-center">
-                            <li class="nav-item btn-outline-light">
-                                <a class="nav-link active " aria-current="page" href="/index.html">Inicio</a>
-                            </li>
                             <li class="nav-item">
                                 <a class="nav-link btn-outline-light" href="./secciones/catalogo.html">Catalogo</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link btn-outline-light" href="#">Tu Pedido</a>
+                                <a class="nav-link btn-outline-light" href="./secciones/pedidos.html">Pedido</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn-outline-light text-center" href="#">Preguntas Frecuentes</a>
+                                <a class="nav-link btn-outline-light text-center"
+                                    href="./secciones/preguntas.html">Preguntas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-light text-center"
+                                    href="./secciones/nosotros.html">Nosotros</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+            <!--Fin-nav-bar-->
         </div>
         <div>
             <figure class="text-end header__text shadow fade-in">
@@ -57,8 +67,11 @@
             </figure>
         </div>
     </header>
+    <!--FIN-HEADER-->
+    <!--MAIN-->
     <main class="main">
         <div class="container-fluid main__img shadow-lg">
+            <!--Carrusel-->
             <div id="carouselExampleCaptions" class="carousel slide  " data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -71,27 +84,30 @@
                 <div class="carousel-inner shadow-lg">
                     <div class="carousel-item active">
                         <a href="./secciones/catalogo.html">
-                            <img src="./assets/huevo.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-block d-md-block ">
-                                <h5>Pascuas</h5>
+                            <img src="./assets/huevo.jpg" class="d-block w-100" alt="Huevo de Pascua">
+                            <div
+                                class="carousel-caption d-block d-md-block bg-body bg-gradient bg-opacity-25 rounded-3 shadow">
+                                <h5 class="main__img--carousel text-dark">Pascuas</h5>
                                 <p>Huevos rellenos totalmente a pedido</p>
                             </div>
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="./secciones/catalogo.html">
-                            <img src="./assets/Letra.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-block d-md-block">
-                                <h5>Tortas De fiestas</h5>
+                            <img src="./assets/Letra.jpg" class="d-block w-100" alt="Torta Con forma de Letra">
+                            <div
+                                class="carousel-caption d-block d-md-block bg-body bg-gradient bg-opacity-25 rounded-3 shadow">
+                                <h5 class="main__img--carousel text-dark">Fiestas</h5>
                                 <p>Tortas Totalmente a Pedido</p>
                             </div>
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="./secciones/catalogo.html">
-                            <img src="./assets/oreo.jpg" class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-block d-md-block">
-                                <h5>Tarta Oreo</h5>
+                            <img src="./assets/oreo.jpg" class="d-block w-100" alt="Tarta Oreo">
+                            <div
+                                class="carousel-caption d-block d-md-block bg-body bg-gradient bg-opacity-25 rounded-3 shadow">
+                                <h5 class="main__img--carousel text-dark">Tarta Oreo</h5>
                                 <p>Especialidades</p>
                             </div>
                         </a>
@@ -109,12 +125,14 @@
                 </button>
             </div>
         </div>
+        <!--Fin-Carrusel-->
         <div class="container-fluid main__card shadow">
             <div class="row">
                 <div class="col">
+                    <!--Img-main-->
                     <div class="main__card--item shadow-lg">
                         <a href="./secciones/catalogo.html">
-                            <img src="./assets/oreo.jpg" class="img-fluid main__animation" alt="...">
+                            <img src="./assets/oreo.jpg" class="img-fluid main__animation" alt="Tarta oreo">
                             <div class="imgae__overlay">
                                 <div class="image__title">Tortas</div>
                                 <p class="image__description text-center">Clasicas</p>
@@ -123,6 +141,7 @@
                     </div>
                 </div>
                 <div class="col">
+                    <!--Img-main-->
                     <div class="main__card--item shadow">
                         <a href="./secciones/catalogo.html">
                             <img src="./assets/Postres.jpg" class="img-fluid main__animation"
@@ -139,9 +158,10 @@
         <div class="container-fluid main__card shadow">
             <div class="row">
                 <div class="col">
+                    <!--Img-main-->
                     <div class="main__card--item shadow">
                         <a href="./secciones/catalogo.html">
-                            <img src="./assets/huevo.jpg" class="img-fluid main__animation" alt="...">
+                            <img src="./assets/huevo.jpg" class="img-fluid main__animation" alt="Huevo de Pascuas">
                             <div class="imgae__overlay">
                                 <div class="image__title ">Especiales</div>
                                 <p class="image__description text-center galaxyfold">Unicos</p>
@@ -150,9 +170,11 @@
                     </div>
                 </div>
                 <div class="col">
+                    <!--Img-main-->
                     <div class="main__card--item shadow">
                         <a href="./secciones/catalogo.html">
-                            <img src="./assets/Alfajores.jpg" class="img-fluid main__animation" alt="...">
+                            <img src="./assets/Alfajores.jpg" class="img-fluid main__animation"
+                                alt="Alfajores caseros mixtos">
                             <div class="imgae__overlay">
                                 <div class="image__title">Alfajores</div>
                                 <p class="image__description text-center">Variedades</p>
@@ -163,7 +185,9 @@
             </div>
         </div>
     </main>
+    <!--FIN-MAIN-->
     <footer class="footer shadow-lg">
+        <!--Footer-->
         <div class="conteiner-fluid footer__test text-center">
             Todos los Derechos Reservados Shira ©
         </div>
@@ -172,4 +196,5 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
